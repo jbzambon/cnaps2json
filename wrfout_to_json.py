@@ -102,6 +102,7 @@ points = np.shape(d_lon[0])[0] * np.shape(d_lat[0])[0]
 nx = np.shape(d_lon[0,:])[0]
 ny = np.shape(d_lat[:,0])[0]
 
+# U-component of surface wind
 outstr = str("[ \n\
     {\n\
         \"header\":{\n\
@@ -167,6 +168,8 @@ for j in range(0,ny):
 outstr += str("        ]\n\
     },\n\
 ")
+
+# V-component of surface wind
             
 outstr += str("    {\n\
         \"header\":{\n\
